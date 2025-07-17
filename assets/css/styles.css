@@ -98,6 +98,7 @@ img {
 .card__bg {
   object-fit: cover;
   object-position: center;
+  margin-top: 47rem;
 }
 
 .card__blur {
