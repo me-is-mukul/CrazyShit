@@ -141,6 +141,24 @@ nav a:hover {
         0 0 20px rgb(136, 107, 223);
 }
 
+.scroll-progress {
+  position: fixed;
+  top: 0px; /* or whatever the height of your navbar is */
+  left: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f0c, rgb(5, 31, 101), #0f0, rgb(144, 0, 255), #f0c);
+  background-size: 300% 100%;
+  animation: shimmer 2s linear infinite;
+  width: 0%;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+}
+@keyframes shimmer {
+  0% { background-position: 0% 0; }
+  100% { background-position: 300% 0; }
+}
+
 
 .left {
     font-size: 1.2rem;
