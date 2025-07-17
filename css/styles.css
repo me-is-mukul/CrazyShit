@@ -1,0 +1,134 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Michroma', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black ;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+#element {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #ccc;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #ccc;
+    animation: blink-caret 0.8s step-end infinite;
+}
+
+
+.text-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-heading {
+    font-size: 2rem;
+    margin: 0;
+    text-align: left;
+}
+
+.image-side .profile-img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    0% {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.page-section{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    opacity: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(136, 107, 223);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(136, 107, 223);
+    text-shadow: 0 0 5px rgb(136, 107, 223),
+        0 0 10px rgb(136, 107, 223),
+        0 0 20px rgb(136, 107, 223);
+}
+
+
+.left {
+    font-size: 1.2rem;
+}
