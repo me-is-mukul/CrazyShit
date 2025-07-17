@@ -9,11 +9,11 @@ new FinisherHeader({
     "speed": {
         "x": {
             "min": 0.1,
-            "max": 0.4
+            "max": 0.6
         },
         "y": {
             "min": 0.1,
-            "max": 0.4
+            "max": 0.6
         }
     },
     "colors": {
