@@ -166,3 +166,72 @@ nav a:hover {
     font-size: 1.2rem;
 }
 
+.projects-section {
+  padding: 80px 0;
+  background-color: #0B525B; /* Adjust to match your theme */
+  color: white;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.project-img {
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 6px;
+  background: linear-gradient(45deg, rgb(87, 23, 87), rgb(21, 21, 77));
+  background-size: 400% 400%;
+  animation: borderGlow 6s linear infinite;
+  transition: transform 0.4s ease;
+}
+
+.project-img img {
+  height: auto;
+  width: 100%;
+  max-width: 976px;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+.project-img:hover img {
+  transform: scale(1.05) rotate(0deg);
+}
+
+.github-logo {
+  width: 150px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #00f);
+  transition: transform 0.3s ease;
+}
+
+.github-logo:hover {
+  transform: scale(1.5) rotate(10deg);
+}
+
+@keyframes borderGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.project-heading{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#projects{
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
