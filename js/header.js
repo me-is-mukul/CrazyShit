@@ -31,7 +31,7 @@ new FinisherHeader({
         "center": 0.55,
         "edge": 0.05
     },
-    "skew": -2.2,
+    "skew": 0,
     "shapes": [
         "c",
         "c"

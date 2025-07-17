@@ -143,7 +143,7 @@ nav a:hover {
 
 .scroll-progress {
   position: fixed;
-  top: 0px; /* or whatever the height of your navbar is */
+  top: 0px; 
   left: 0;
   height: 4px;
   background: linear-gradient(90deg, #f0c, rgb(5, 31, 101), #0f0, rgb(144, 0, 255), #f0c);
