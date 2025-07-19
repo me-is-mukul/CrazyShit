@@ -302,3 +302,7 @@ nav a:hover {
     color: #ccc;
     flex-wrap: wrap;
 }
+h4{
+    /* center this standalone tag */
+    text-align: center;
+}
